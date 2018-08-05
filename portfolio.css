@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background: #33658A;
+    color: #F9F9F9;
+    word-wrap: break-word;
+    list-style-type: none;
+}
+
+img{
+    height: 200px;
+    max-width: 100%;
+}
+
+.page__header{
+    color: #080705;
+    text-align: center;
+    padding-bottom: 5px;
+}
+/* Nav Bar */
+
+.nav{
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: block;
+    border-bottom: solid lightgray; 
+    background: #717C89;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav__link{
+    list-style-type: none;
+}
+
+.flex__continer__nav{
+    display: flex;
+    flex-basis: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex__item__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #FEFEFF;
+    display: inline-block;
+
+}
+
+.nav_button{
+    padding: 10px;
+}
+
+a:hover{
+    color: #0F9ED6;
+    text-decoration: underline;
+}
+
+/* Portfolio Page */
+
+.sub__heading{
+    color: #D0D3D4;
+}
+
+.flex__continer__portfolio{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: column;
+    margin: 45px;
+}
+
+.flex__item__portfolio{
+    max-width: 200px;
+    padding: 15px;    
+    border: 10px #33658A solid;
+}
+
+.photo{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: solid 60px #33658A;
+    max-width: 80%;
+
+}
+
+/* Projects Page */
+
+.Project__Title{
+    color: #CACAAA;
+}
+
+.flex__container__project{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: column;
+    margin: 45px;
+}
+
+.flex__item__project{
+   max-width: 200px;
+   padding: 15px; 
+}
+
+a:hover{
+    color: #50FFCF;
+    text-decoration: underline;
+}
+
+.Site{
+    text-decoration: none;
+    color: #FEFEFF;
+    list-style: none;
+}
+
+/* Resume Page */
+.resume__body{
+    border: 2px solid rgb(184, 183, 183);
+}
+.sub__header{
+    text-align: center;
+    font-size: 1em;
+}
+
+.resume__bio{
+    text-indent: 2em;
+    color: #E5D798;
+    text-align: left;
+    text-emphasis: wrap;
+}
+
+.resume__headings {
+    color: #080705;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.job {
+    text-emphasis: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #E5D798;
+}
+
+.duties{
+    color: #D3D2D3;
+}
+
+.duties__list{
+    color: #B4995A;
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+/* Footer */
+.footer {
+    clear: both;
+    margin: auto; 
+    border-top: solid  5px black;
+  }
+
+
+.footer__block {
+    text-align: center;
+    font-size: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: solid 5px black;
+    background: #B4995A;
+  }
+
+.footer a:visited{
+    color: black;
+}
+
+.footer a:hover{
+    color: #FFFFFFD7;
+}
+
+.icon__social{
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media print {}
+@media screen and (min-width: 768px) 
+  and (max-width: 1600px) {
+    img{
+        max-width: 95%;
+    }
+
+    /* Nav */
+
+    .nav_button{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* Portfolio */
+
+    .flex__continer__portfolio{
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 45px;
+    }
+
+    .flex__item__portfolio{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 40%;   
+        border-left: 100px #33658A solid;
+    }
+
+    .flex__item__portfolio{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 60%;   
+        border-left: 100px #33658A solid;
+    }
+
+    /* Project */
+
+    .flex__container__project{
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: column;
+        margin: 45px;
+    }
+
+    .flex__item__project{
+        max-width: 200px;
+        padding: 15px; 
+     }
+
+    /* Footer */
+
+    .footer__block {
+        text-align: center;
+        float: left;
+        width: 33.3%;
+        height: 200px;
+        vertical-align: middle;
+        position: relative;
+        align-content: center;
+      }
+
+    }
